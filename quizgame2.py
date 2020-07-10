@@ -32,8 +32,13 @@ def enterQN():
     else:
         print("Question is already done enter another question number")
         enterQN()
-        print("Today! we are going to play interesting quiz game")
-doneQuestion = [] 
+print("Today! we are going to play interesting quiz game")
+#doneQuestion = [] 
 for i in range(10):
-    enterQN()
+    if i == 3:
+        if score < 1 :
+            print("You are not qualified to play more !!")
+            break
+    else:
+        enterQN()
 print(" Your score out of 10 is ", score)
